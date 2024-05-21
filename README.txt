@@ -1,33 +1,64 @@
-Helios by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Noah Wright's Portfolio Website
 
+Welcome to my portfolio website! This is where I showcase my projects, skills, and experiences as a computer scientist.
 
-This is Helios, a brand new site template for HTML5 UP. It's clean, modern, and designed
-to take advantage of larger (well, wider) displays while still being capable of gracefully
-scaling down to fit all manner of smaller ones.
+## About Me
 
-Demo images* courtesy of Michael Domaradzki, an awesome photographer I met over at
-deviantART. Check out his portfolio here:
+I'm Noah Wright, a passionate computer science graduate with a Bachelor's degree from Tufts University. I love diving into the world of technology, exploring new concepts, and building exciting projects.
 
-http://md.photomerchant.net/
+## Projects
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Michaels's work without his explicit permission!)
+### Ruit League Web App
 
-AJ
-aj@lkn.io | @ajlkn
+**Description:** Ruit League is a web application developed for the Tufts Theta Chi Fraternity's 2023 season. It serves as a centralized platform for real-time input of game statistics and provides comprehensive player and team performance insights throughout the season.
 
+**Context:** Ruit League is a brotherhood game held each semester for the brothers of Theta Chi. This web app was developed to encourage fraternity members' participation and facilitate friendly competition over the course of the semester. During the 2023 season, member engagement improved by 70%.
 
-Credits:
+**Important Note:** All current data and stats reflect user input from the 2023 season. There is currently no system in place to handle the creation of new seasons or to delete the current data unless done on the backend.
 
-	Demo Images:
-		Michael Domaradzki (md.photomerchant.net)
+**Features:**
+- Real-time Game Stats Input: Users can input game statistics as they happen, with data validated and organized for accuracy and consistency.
+- Comprehensive Player and Team Statistics: Detailed statistical insights provided through visualizations of key metrics.
+- New Team and Player Addition: Dynamic addition of new teams and players to the system, ensuring flexibility and adaptability.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+**Technologies Used:**
+- Streamlit
+- Pandas
+- Matplotlib
+- Seaborn
+- DateTime
+- Boto3
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+**Usage:** Access the application [here](http://35.172.109.115:8501/).
+
+### KanjamaticCards - a Japanese Vocabulary Anki Generator
+
+**Description:** KanjamaticCards is a Python script designed to generate a CSV file compatible with Anki flashcards, containing Japanese vocabulary along with furigana readings, English definitions, example sentences, and more.
+
+**Features:**
+- Furigana Addition
+- Translation
+- Definitions
+- Anki Compatibility
+
+**Dependencies:** pandas, re, jisho_api, sudachipy, wanakana, deep_translator
+
+**Usage:**
+1. Install dependencies using `pip install pandas re jisho-api sudachipy wanakana deep-translator`.
+2. Customize the `KANJI_READING_MAPPING` dictionary.
+3. Place vocabulary data in a CSV file with a column named 'Vocab'.
+4. Run the script to generate a new CSV file suitable for Anki.
+
+**License:** [MIT License](LICENSE)
+
+## Skills
+
+- Programming Languages: Python, Java, C++, C, HTML.
+- Technologies/Frameworks: List of relevant technologies and frameworks.
+- Soft Skills: Any soft skills you possess (e.g., communication, problem-solving).
+
+## Contact Me
+
+- LinkedIn: [Noah Wright](https://www.linkedin.com/in/noah-wright99/)
+- GitHub: [noahw8299](https://github.com/noahw8299)
+- Email: luckydragon1999@gmail.com
