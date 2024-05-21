@@ -21,7 +21,7 @@ I'm Noah Wright, a passionate computer science graduate with a Bachelor's degree
 - Comprehensive Player and Team Statistics: Detailed statistical insights provided through visualizations of key metrics.
 - New Team and Player Addition: Dynamic addition of new teams and players to the system, ensuring flexibility and adaptability.
 
-**Technologies Used:**
+Technologies Used:
 - Streamlit
 - Pandas
 - Matplotlib
@@ -29,13 +29,13 @@ I'm Noah Wright, a passionate computer science graduate with a Bachelor's degree
 - DateTime
 - Boto3
 
-**Usage:** Access the application [here](http://35.172.109.115:8501/).
+Usage: Access the application [here](http://35.172.109.115:8501/).
 
 ### KanjamaticCards - a Japanese Vocabulary Anki Generator
 
 **Description:** KanjamaticCards is a Python script designed to generate a CSV file compatible with Anki flashcards, containing Japanese vocabulary along with furigana readings, English definitions, example sentences, and more.
 
-**Features:**
+Features:
 - Furigana Addition
 - Translation
 - Definitions
@@ -49,13 +49,12 @@ I'm Noah Wright, a passionate computer science graduate with a Bachelor's degree
 3. Place vocabulary data in a CSV file with a column named 'Vocab'.
 4. Run the script to generate a new CSV file suitable for Anki.
 
-**License:** [MIT License](LICENSE)
-
 ## Skills
 
-- Programming Languages: Python, Java, C++, C, HTML.
-- Technologies/Frameworks: List of relevant technologies and frameworks.
-- Soft Skills: Any soft skills you possess (e.g., communication, problem-solving).
+- Programming Languages: Python, Java, C++, HTML, CSS, JavaScript.
+- Technologies/Frameworks: Streamlit, Pandas, Matplotlib, Seaborn, DateTime, Boto3, Flask.
+- Soft Skills: Communication, Problem-solving, Collaboration, Time Management.
+
 
 ## Contact Me
 
