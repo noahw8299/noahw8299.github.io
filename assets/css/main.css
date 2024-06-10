@@ -2507,117 +2507,122 @@ input, select, textarea {
 	.carousel {
 		position: relative;
 		overflow: hidden;
-		padding: 2em 0 2em 0;
+		padding: 2em 0;
 		margin-bottom: 0;
+		display: flex;  /* Ensure the carousel is flex */
+		gap: 20px;  /* Add gap between carousel items */
 	}
 
-		.carousel .forward, .carousel .backward {
-			position: absolute;
-			top: 50%;
-			width: 6em;
-			height: 12em;
-			margin-top: -6em;
-			cursor: pointer;
-		}
+	.carousel .forward, .carousel .backward {
+		position: absolute;
+		top: 50%;
+		width: 6em;
+		height: 12em;
+		margin-top: -6em;
+		cursor: pointer;
+	}
 
-			.carousel .forward:before, .carousel .backward:before {
-				content: '';
-				display: block;
-				width: 6em;
-				height: 6em;
-				border-radius: 100%;
-				background-color: rgba(72, 57, 73, 0.5);
-				position: absolute;
-				top: 50%;
-				margin-top: -3em;
-				-moz-transition: background-color 0.35s ease-in-out;
-				-webkit-transition: background-color 0.35s ease-in-out;
-				-o-transition: background-color 0.35s ease-in-out;
-				-ms-transition: background-color 0.35s ease-in-out;
-				transition: background-color 0.35s ease-in-out;
-				-webkit-backface-visibility: hidden;
-			}
+	.carousel .forward:before, .carousel .backward:before {
+		content: '';
+		display: block;
+		width: 6em;
+		height: 6em;
+		border-radius: 100%;
+		background-color: rgba(72, 57, 73, 0.5);
+		position: absolute;
+		top: 50%;
+		margin-top: -3em;
+		transition: background-color 0.35s ease-in-out;
+		backface-visibility: hidden;
+	}
 
-			.carousel .forward:after, .carousel .backward:after {
-				content: '';
-				width: 3em;
-				height: 3em;
-				position: absolute;
-				top: 50%;
-				margin: -1.5em 0 0 0;
-				background: url("images/arrow.svg") no-repeat center center;
-			}
+	.carousel .forward:after, .carousel .backward:after {
+		content: '';
+		width: 3em;
+		height: 3em;
+		position: absolute;
+		top: 50%;
+		margin: -1.5em 0 0 0;
+		background: url("images/arrow.svg") no-repeat center center;
+	}
 
-			.carousel .forward:hover:before, .carousel .backward:hover:before {
-				background-color: rgba(239, 131, 118, 0.75);
-			}
+	.carousel .forward:hover:before, .carousel .backward:hover:before {
+		background-color: rgba(239, 131, 118, 0.75);
+	}
 
-		.carousel .forward {
-			right: 0;
-		}
+	.carousel .forward {
+		right: 0;
+	}
 
-			.carousel .forward:before {
-				right: -3em;
-			}
+	.carousel .forward:before {
+		right: -3em;
+	}
 
-			.carousel .forward:after {
-				right: -0.25em;
-			}
+	.carousel .forward:after {
+		right: -0.25em;
+	}
 
-		.carousel .backward {
-			left: 0;
-		}
+	.carousel .backward {
+		left: 0;
+	}
 
-			.carousel .backward:before {
-				left: -3em;
-			}
+	.carousel .backward:before {
+		left: -3em;
+	}
 
-			.carousel .backward:after {
-				left: -0.25em;
-				-moz-transform: scaleX(-1);
-				-webkit-transform: scaleX(-1);
-				-ms-transform: scaleX(-1);
-				transform: scaleX(-1);
-			}
+	.carousel .backward:after {
+		left: -0.25em;
+		transform: scaleX(-1);
+	}
 
-		.carousel .reel {
-			white-space: nowrap;
-			position: relative;
-			-webkit-overflow-scrolling: touch;
-			padding: 0 2em 0 2em;
-		}
+	.carousel .reel {
+		white-space: nowrap;
+		position: relative;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		padding: 0 2em;
+		display: flex;  /* Ensure the reel is flex */
+		gap: 20px;  /* Add gap between items */
+	}
 
-		.carousel article {
-			display: inline-block;
-			width: 18em;
-			background: #fff;
-			text-align: center;
-			padding: 0 1em 3em 1em;
-			margin: 0 2em 0 0;
-			white-space: normal;
-			opacity: 1.0;
-			-moz-transition: opacity 0.75s ease-in-out;
-			-webkit-transition: opacity 0.75s ease-in-out;
-			-ms-transition: opacity 0.75s ease-in-out;
-			transition: opacity 0.75s ease-in-out;
-		}
+	.carousel article {
+		display: inline-block;
+		width: 300px;  /* Set a fixed width */
+		background: #fff;
+		text-align: center;
+		padding: 20px;  /* Uniform padding */
+		margin: 0;  /* Remove default margin */
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		white-space: normal;
+		opacity: 1.0;
+		transition: opacity 0.75s ease-in-out;
+	}
 
-			.carousel article.loading {
-				opacity: 0;
-			}
+	.carousel article.loading {
+		opacity: 0;
+	}
 
-			.carousel article .image {
-				position: relative;
-				left: -1em;
-				top: 0;
-				width: auto;
-				margin-right: -2em;
-				margin-bottom: 3em;
-			}
+	.carousel article .image {
+		position: relative;
+		top: 0;
+		width: 100%;  /* Ensure the image is full width */
+		height: auto;  /* Maintain aspect ratio */
+		border-radius: 5px;
+		margin-bottom: 1em;  /* Adjust margin */
+	}
 
-			.carousel article p {
-				text-align: center;
-			}
+	.carousel header h3 {
+		font-size: 1.5em;
+		margin: 10px 0;
+	}
+
+	.carousel article p {
+		font-size: 1em;
+		color: #666;
+		text-align: center;
+	}
+
 
 /* Wide */
 
